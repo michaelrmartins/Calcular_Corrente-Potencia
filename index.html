@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A=T/R</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular corrente Elétrica com base na Resistência</h1>
+
+        <div class="input-group">
+            <input placeholder="Tensão" type="number" id="voltage"> 
+            <span>Volts (V)</span>
+         </div>
+         <div class="input-group">
+            <input placeholder="Resistência" type="number" id="resistance"> 
+            <span>Ω (R)</span>
+         </div>
+         
+         <button type="button" onclick="main()">Calcular</button>
+        <h3>Resultado:</h3>
+        <span id="message"></span>
+        <span id="result_amperes"></span><br>
+        <span id="result_watts"></span>
+    </div>
+    <script type="text/javascript" src="javascript/functions.js"></script>
+</body>
+</html>

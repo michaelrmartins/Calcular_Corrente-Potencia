@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo uma fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centralizando o conteúdo da página */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input de texto e número */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Botão de cálculo */
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Espaçamento entre o título do resultado e os valores */
+h3 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* Mensagens e resultados */
+#message, #result_amperes, #result_watts {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Espaçamento entre os campos */
+input {
+    margin-bottom: 15px;
+}
+
+
+
+/* Estilizando o grupo de inputs e suas unidades */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-group span {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #555;
+}
