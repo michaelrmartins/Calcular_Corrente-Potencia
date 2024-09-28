@@ -23,6 +23,9 @@ O projeto contém os seguintes arquivos e pastas:
 ┣ 📜index.html # Interface do usuário (HTML)
 ┣ 📜README.md # Descrição do projeto
 
+
+projeto-calculo-corrente/ ├── css/ │ └── styles.css # Estilos da página ├── javascript/ │ └── functions.js # Lógica do cálculo e validação ├── index.html # Interface do usuário (HTML) └── README.md # Descrição do projeto
+
 ## Tecnologias Utilizadas
 
 - **HTML**: Para estrutura da página.
