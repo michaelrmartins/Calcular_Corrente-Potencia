@@ -4,6 +4,16 @@ function isValidInputs(voltage, resistance){
     return voltage >= 1 && resistance >= 1;
 }
 
+function setDefaultValues(value){
+    document.getElementById("voltage").value = value;
+    main();
+}
+
+function setResistanceBySlider(value){
+    document.getElementById("resistance").value = value;
+    main();
+}
+
 // Update values on frontend -- Send values to frontend
 function updateValues(calculatedRoundedAmperes, calculatedRoundedWatts){
     document.getElementById("result_amperes").innerHTML= "A Corrente é de " + calculatedRoundedAmperes + " Amperes (A)";
@@ -40,11 +50,19 @@ function main(){
         showError("O valor inserido não pode ser menor ou igual a 0.");
         return;
     } else {
-
+    
+    // Remove Error Message
+    showError("")
     // Call Calc Function
     calculate(inputVoltage, inputResistance);
     }
 }
+
+// Add Event Listener
+document.querySelectorAll('.inputValue').forEach(input => {
+    input.addEventListener('input', function(){ main() })  
+})
+
 
 // // Dedub Proposes
 // function Debug(){
